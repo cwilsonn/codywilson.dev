@@ -3,6 +3,7 @@ title: 'Cody Wilson | Work Experience'
 description: ''
 experience:
   - company: 'Insight Global'
+    location: 'Remote'
     role: 'Frontend Software Developer'
     startDate: '09/01/2023'
     isCurrent: true
@@ -29,6 +30,7 @@ experience:
       - name: 'SQL'
         icon: 'tabler:database'
   - company: 'Sonar Software'
+    location: 'Remote'
     role: 'Frontend Software Developer'
     startDate: '01/24/2022'
     endDate: '07/15/2023'
@@ -59,6 +61,7 @@ experience:
         icon: 'tabler:brand-graphql'
         color: 'text-fuchsia-500'
   - company: 'Elevated Third'
+    location: 'Remove'
     role: 'Drupal Developer'
     startDate: '10/01/2021'
     endDate: '01/24/2022'
@@ -95,6 +98,7 @@ experience:
         icon: 'simple-icons:contentstack'
         color: 'text-orange-500'
   - company: 'Flows.ai'
+    location: 'Remote'
     role: 'Software Engineer'
     startDate: '02/01/2021'
     endDate: '10/01/2021'
@@ -139,6 +143,7 @@ experience:
         icon: 'tabler:brand-figma'
         color: 'text-purple-500'
   - company: 'Tangent Digital'
+    location: 'Scottsdale, AZ'
     role: 'Drupal Developer & Site Designer'
     startDate: '09/01/2016'
     endDate: '01/10/2021'
@@ -190,5 +195,5 @@ experience:
 :hero-base{:preTitle="// My time in the industry" :title="Work experience"}
 
 ::section-base
-:work-history-list{:items=experience}
+:work-history-list{:items=experience .-mt-48 .lg:-mt-64 .z-[200]}
 ::

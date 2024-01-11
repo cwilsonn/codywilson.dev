@@ -7,9 +7,11 @@
 </template>
 
 <script setup lang="ts">
+// TYPES
 export type CommentFlagProps = {
   content?: string
 }
 
+// PROPS
 defineProps<CommentFlagProps>();
 </script>

@@ -1,13 +1,12 @@
 <template>
   <div :class="{
-    'relative w-full overflow-hidden bg-black prose prose-xl prose-neutral !prose-invert max-w-none': true,
-    'min-h-[calc(100vh-112px)] flex items-center justify-center': size === 'screen',
-    'py-48': size === 'lg',
-    'py-36': size === 'md',
+    'bg-black relative w-full overflow-hidden prose prose-xl prose-neutral !prose-invert max-w-none': true,
+    'min-h-[calc(100vh-112px)] py-24 flex items-center justify-center': size === 'screen',
+    'py-64': size === 'lg',
+    'py-48': size === 'md',
     'py-24': size === 'sm',
   }">
-    <AtomsStaticBase />
-    <div class="container z-10 text-white">
+    <div class="container z-[100] text-white">
       <CommentFlag :content="preTitle" />
       <h1
         :class="{
@@ -20,20 +19,23 @@
       </h1>
       <div v-if="$slots.default"
         class="mt-8 max-w-prose lg:mt-16">
-        <ContentSlot :use="$slots.default"></ContentSlot>
+        <ContentSlot :use="$slots.default"/>
       </div>
     </div>
+    <AtomsStaticBase />
   </div>
 </template>
 
 <script lang="ts" setup>
+// TYPES
 type HeroBaseProps = {
   title?: string,
   preTitle?: string,
   size?: 'sm' | 'md' | 'lg' | 'screen',
 }
 
+// PROPS
 withDefaults(defineProps<HeroBaseProps>(), {
-  size: 'sm',
+  size: 'lg',
 });
 </script>
